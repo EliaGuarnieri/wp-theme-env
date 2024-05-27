@@ -55,7 +55,7 @@
           "withAssets": true,
           "withVersionFile": true
         }
-      ]
+      ],
       [
         "@semantic-release/git",
         {
