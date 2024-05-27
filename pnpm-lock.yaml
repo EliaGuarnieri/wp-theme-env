@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@semantic-release/wordpress@1.6.1':
+    hash: l4kixhfipktligatfl54gnmgam
+    path: patches/@semantic-release__wordpress@1.6.1.patch
+
 importers:
 
   .:
@@ -25,7 +30,7 @@ importers:
         version: 12.0.1(semantic-release@23.1.1(typescript@5.4.5))
       '@semantic-release/wordpress':
         specifier: ^1.6.1
-        version: 1.6.1(semantic-release@23.1.1(typescript@5.4.5))
+        version: 1.6.1(patch_hash=l4kixhfipktligatfl54gnmgam)(semantic-release@23.1.1(typescript@5.4.5))
       husky:
         specifier: ^9.0.11
         version: 9.0.11
@@ -2138,7 +2143,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@semantic-release/wordpress@1.6.1(semantic-release@23.1.1(typescript@5.4.5))':
+  '@semantic-release/wordpress@1.6.1(patch_hash=l4kixhfipktligatfl54gnmgam)(semantic-release@23.1.1(typescript@5.4.5))':
     dependencies:
       '@semantic-release/error': 4.0.0
       class-transformer: 0.5.1

@@ -1,0 +1,13 @@
+diff --git a/dist/prepare.js b/dist/prepare.js
+index 64dafe8d7740fb6e10046e2ffa86cd9a6c78759e..1f6bb7ed3bb8f8dbef684b38642402773423157c 100644
+--- a/dist/prepare.js
++++ b/dist/prepare.js
+@@ -24,7 +24,7 @@ export async function prepare(config, context) {
+         const readmePath = ['.wordpress-org/readme.txt', 'readme.txt'].reduce((acc, p) => (fs.existsSync(path.join(workDir, p)) ? p : acc), undefined);
+         readmePath && files.push(readmePath);
+     }
+-    errors.push(...(await replaceVersions(workDir, files, context.nextRelease.version)));
++    errors.push(...(await replaceVersions(workDir, files, context.nextRelease.version, context.lastRelease.version)));
+     if (errors.length) {
+         throw new AggregateError(errors);
+     }
