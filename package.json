@@ -52,11 +52,8 @@
         {
           "type": "theme",
           "slug": "wordpress-theme",
-          "withAssets": true,
           "withVersionFile": true,
-          "versionFiles": [
-            "style.css"
-          ]
+          "releasePath": "dist"
         }
       ],
       [
