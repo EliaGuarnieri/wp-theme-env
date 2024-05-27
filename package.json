@@ -53,7 +53,10 @@
           "type": "theme",
           "slug": "wordpress-theme",
           "withAssets": true,
-          "withVersionFile": true
+          "withVersionFile": true,
+          "versionFiles": [
+            "style.css"
+          ]
         }
       ],
       [
