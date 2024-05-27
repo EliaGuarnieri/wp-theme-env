@@ -1,3 +1,24 @@
+## [1.1.2](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.1...v1.1.2) (2024-05-27)
+
+
+### Bug Fixes
+
+* Add dist folder to .gitignore ([8e7a58f](https://github.com/EliaGuarnieri/wordpress-theme/commit/8e7a58f3906547a862ab4a01ff26b5539dd65d23))
+
+## [1.1.2](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.1...v1.1.2) (2024-05-27)
+
+
+### Bug Fixes
+
+* Add dist folder to .gitignore ([8e7a58f](https://github.com/EliaGuarnieri/wordpress-theme/commit/8e7a58f3906547a862ab4a01ff26b5539dd65d23))
+
+## [1.1.2](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.1...v1.1.2) (2024-05-27)
+
+
+### Bug Fixes
+
+* Add dist folder to .gitignore ([8e7a58f](https://github.com/EliaGuarnieri/wordpress-theme/commit/8e7a58f3906547a862ab4a01ff26b5539dd65d23))
+
 ## [1.1.1](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.0...v1.1.1) (2024-05-27)
 
 
