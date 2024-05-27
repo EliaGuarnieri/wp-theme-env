@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.2...v1.1.3) (2024-05-27)
+
+
+### Bug Fixes
+
+* Patch @semantic-release/wordpress to handle version update correctly ([4d0e919](https://github.com/EliaGuarnieri/wordpress-theme/commit/4d0e91942ae70409010ba42fc4ee34d175ad7fe9))
+
 ## [1.1.2](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.1...v1.1.2) (2024-05-27)
 
 
