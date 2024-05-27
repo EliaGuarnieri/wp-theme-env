@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.3...v1.2.0) (2024-05-27)
+
+
+### Features
+
+* Add global style ([eb8dd11](https://github.com/EliaGuarnieri/wordpress-theme/commit/eb8dd115e189e0038d0a26456c124d647c3c60db))
+
 ## [1.1.3](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.2...v1.1.3) (2024-05-27)
 
 
