@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.0.1...v1.1.0) (2024-05-27)
+
+
+### Features
+
+* Add functions.php file ([c74a2ff](https://github.com/EliaGuarnieri/wordpress-theme/commit/c74a2ffd5aadb3d9e291cc6e4af0461a767a95f5))
+
+
+### Reverts
+
+* Revert commit for testing porpouse ([99961d5](https://github.com/EliaGuarnieri/wordpress-theme/commit/99961d5d290656f83d27efbb31eeea6df7ed3ecb))
+
 ## [1.0.1](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.0.0...v1.0.1) (2024-05-27)
 
 
