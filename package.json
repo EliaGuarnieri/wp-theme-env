@@ -1,6 +1,6 @@
 {
   "name": "worpdress-theme",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": true,
   "repositoryUrl": "https://github.com/EliaGuarnieri/wordpress-theme.git",
   "description": "",
@@ -53,7 +53,15 @@
           "type": "theme",
           "slug": "wordpress-theme",
           "withVersionFile": true,
-          "releasePath": "dist"
+          "releasePath": "dist",
+          "exclude": [
+            "node_modules",
+            "dist",
+            ".gitignore",
+            ".wp-env.json",
+            "package-lock.json",
+            "pnpm-lock.yaml"
+          ]
         }
       ],
       [

@@ -1,3 +1,31 @@
+## [1.1.1](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.0...v1.1.1) (2024-05-27)
+
+
+### Bug Fixes
+
+* Update package.json for WordPress theme release ([d7c328a](https://github.com/EliaGuarnieri/wordpress-theme/commit/d7c328a5c92c6bf3119c4c1d2c66a37659cdcf02))
+
+## [1.1.1](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.0...v1.1.1) (2024-05-27)
+
+
+### Bug Fixes
+
+* Update package.json for WordPress theme release ([d7c328a](https://github.com/EliaGuarnieri/wordpress-theme/commit/d7c328a5c92c6bf3119c4c1d2c66a37659cdcf02))
+
+## [1.1.1](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.0...v1.1.1) (2024-05-27)
+
+
+### Bug Fixes
+
+* Update package.json for WordPress theme release ([d7c328a](https://github.com/EliaGuarnieri/wordpress-theme/commit/d7c328a5c92c6bf3119c4c1d2c66a37659cdcf02))
+
+## [1.1.1](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.0...v1.1.1) (2024-05-27)
+
+
+### Bug Fixes
+
+* Update package.json for WordPress theme release ([d7c328a](https://github.com/EliaGuarnieri/wordpress-theme/commit/d7c328a5c92c6bf3119c4c1d2c66a37659cdcf02))
+
 # [1.1.0](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.0.1...v1.1.0) (2024-05-27)
 
 
