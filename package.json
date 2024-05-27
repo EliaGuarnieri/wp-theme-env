@@ -48,12 +48,22 @@
         }
       ],
       [
+        "@semantic-release/wordpress",
+        {
+          "type": "theme",
+          "slug": "wordpress-theme",
+          "withAssets": true,
+          "withVersionFile": true
+        }
+      ]
+      [
         "@semantic-release/git",
         {
           "assets": [
             "CHANGELOG.md",
             "package.json",
-            "package-lock.json"
+            "package-lock.json",
+            "style.css"
           ]
         }
       ]
@@ -69,6 +79,7 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^12.0.1",
+    "@semantic-release/wordpress": "^1.6.1",
     "husky": "^9.0.11",
     "semantic-release": "^23.1.1"
   }
