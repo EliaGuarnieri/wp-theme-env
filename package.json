@@ -9,7 +9,7 @@
     "release": "semantic-release --no-ci",
     "prepare": "husky",
     "dev": "wp-env start",
-    "postdev": "tailwindcss -i ./assets/css/global.css -o ./assets/css/style.min.css --watch --minify"
+    "postdev": "tailwindcss -i ./global.css -o ./src/assets/css/style.min.css --watch=always --minify & browser-sync start --proxy http://localhost:8888 --files 'src/**/*.{php,css,html}'"
   },
   "husky": {
     "hooks": {
@@ -55,17 +55,8 @@
           "type": "theme",
           "slug": "wordpress-theme",
           "withVersionFile": true,
-          "releasePath": "dist",
-          "exclude": [
-            "node_modules",
-            "dist",
-            ".gitignore",
-            ".wp-env.json",
-            "package-lock.json",
-            "pnpm-lock.yaml",
-            "assets/css/global.css",
-            "tailwind.config.js"
-          ]
+          "path": "./src",
+          "releasePath": "dist"
         }
       ],
       [
@@ -92,6 +83,7 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^12.0.1",
     "@semantic-release/wordpress": "^1.6.1",
+    "browser-sync": "^3.0.2",
     "husky": "^9.0.11",
     "semantic-release": "^23.1.1",
     "tailwindcss": "^3.4.3"
