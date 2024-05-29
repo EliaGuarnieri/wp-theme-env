@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.2.1...v1.2.2) (2024-05-29)
+
+
+### Bug Fixes
+
+* style version for testing porpouse ([6422618](https://github.com/EliaGuarnieri/wordpress-theme/commit/6422618c01c571930659200868cc18b8829c5f05))
+
 ## [1.2.1](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.2.0...v1.2.1) (2024-05-29)
 
 
