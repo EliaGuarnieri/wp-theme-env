@@ -1,10 +1,10 @@
 {
   "name": "worpdress-theme",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "private": true,
   "repositoryUrl": "https://github.com/EliaGuarnieri/wordpress-theme.git",
   "description": "A simple test theme for WordPress.",
-  "keywords": [ ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "scripts": {
