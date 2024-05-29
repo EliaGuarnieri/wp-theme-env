@@ -13,12 +13,13 @@ function wordpress_theme_enqueue_styles() {
     $manifest = json_decode(file_get_contents(get_parent_theme_file_path('assets/manifest.json')), true);
 
     if (is_array($manifest)) {
-      $manifest_key = array_keys(($manifest));
-      if (isset($manifest[0])) {
+      $manifest_key = array_keys($manifest);
+
+      if (isset($manifest_key[0])) {
         foreach (@$manifest[$manifest_key[0]]['css'] as $css_file) {
           wp_enqueue_style(
             'wordpress-theme-style',
-            get_parent_theme_file_uri('assets/css/' . $css_file),
+            get_parent_theme_file_uri('assets/' . $css_file),
             array(),
             wp_get_theme()->get('Version'),
             'all'
@@ -29,7 +30,7 @@ function wordpress_theme_enqueue_styles() {
         if (!empty($js_files)) {
           wp_enqueue_script(
             'wordpress-theme-script',
-            get_parent_theme_file_uri('assets/js/' . $js_files),
+            get_parent_theme_file_uri('assets/' . $js_files),
             array(),
             wp_get_theme()->get('Version'),
             true
