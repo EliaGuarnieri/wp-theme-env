@@ -1,10 +1,10 @@
 {
   "name": "worpdress-theme",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "repositoryUrl": "https://github.com/EliaGuarnieri/wordpress-theme.git",
   "description": "A simple test theme for WordPress.",
-  "keywords": [ ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "scripts": {
@@ -23,7 +23,14 @@
       "@commitlint/config-conventional"
     ],
     "rules": {
-      "subject-case": [ 2, "never", [ "start-case", "pascal-case" ] ]
+      "subject-case": [
+        2,
+        "never",
+        [
+          "start-case",
+          "pascal-case"
+        ]
+      ]
     }
   },
   "release": {
@@ -32,9 +39,21 @@
     ],
     "plugins": [
       "@semantic-release/release-notes-generator",
-      [ "@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" } ],
-      [ "@semantic-release/npm", { "npmPublish": false } ],
-      [ "@semantic-release/wordpress", {
+      [
+        "@semantic-release/changelog",
+        {
+          "changelogFile": "CHANGELOG.md"
+        }
+      ],
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      [
+        "@semantic-release/wordpress",
+        {
           "type": "theme",
           "slug": "wordpress-theme",
           "withVersionFile": true,
@@ -42,8 +61,17 @@
           "releasePath": "dist"
         }
       ],
-      [ "@semantic-release/git", {
-          "assets": [ "CHANGELOG.md", "package.json", "package-lock.json", "style.css" ] } ]
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "package-lock.json",
+            "style.css"
+          ]
+        }
+      ]
     ]
   },
   "packageManager": "pnpm@9.1.2+sha512.127dc83b9ea10c32be65d22a8efb4a65fb952e8fefbdfded39bdc3c97efc32d31b48b00420df2c1187ace28c921c902f0cb5a134a4d032b8b5295cbfa2c681e2",

@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.2.0...v1.2.1) (2024-05-29)
+
+
+### Bug Fixes
+
+* assets not loaded in productin ([4aa3840](https://github.com/EliaGuarnieri/wordpress-theme/commit/4aa3840f04000d3111718d65ba67bef4f871b47b))
+
 # [1.2.0](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.1.3...v1.2.0) (2024-05-27)
 
 
