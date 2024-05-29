@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.2.5...v1.2.6) (2024-05-29)
+
+
+### Bug Fixes
+
+* test FS option for zip ([79ee4c2](https://github.com/EliaGuarnieri/wordpress-theme/commit/79ee4c2f8a6f491f5f697e930cab19f2f832b4b3))
+
 ## [1.2.5](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.2.4...v1.2.5) (2024-05-29)
 
 

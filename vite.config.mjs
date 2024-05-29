@@ -27,18 +27,4 @@ export default defineConfig({
     minify: true,
     write: true,
   },
-
-  server: {
-    cors: true,
-    https: false,
-    port: 5173,
-    host: '0.0.0.0',
-
-    hmr: {
-      host: 'localhost',
-      client: 'http://localhost:5173/@vite/client',
-      base: 'http://localhost:5173/',
-      active: true,
-    }
-  }
 });
