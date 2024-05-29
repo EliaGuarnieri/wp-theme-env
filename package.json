@@ -3,13 +3,15 @@
   "version": "1.2.0",
   "private": true,
   "repositoryUrl": "https://github.com/EliaGuarnieri/wordpress-theme.git",
-  "description": "",
-  "main": "index.js",
+  "description": "A simple test theme for WordPress.",
+  "keywords": [ ],
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "release": "semantic-release --no-ci",
     "prepare": "husky",
-    "dev": "wp-env start",
-    "postdev": "tailwindcss -i ./global.css -o ./src/assets/css/style.min.css --watch=always --minify & browser-sync start --proxy http://localhost:8888 --files 'src/**/*.{php,css,html}'"
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "vite build"
   },
   "husky": {
     "hooks": {
@@ -21,14 +23,7 @@
       "@commitlint/config-conventional"
     ],
     "rules": {
-      "subject-case": [
-        2,
-        "never",
-        [
-          "start-case",
-          "pascal-case"
-        ]
-      ]
+      "subject-case": [ 2, "never", [ "start-case", "pascal-case" ] ]
     }
   },
   "release": {
@@ -37,21 +32,9 @@
     ],
     "plugins": [
       "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "CHANGELOG.md"
-        }
-      ],
-      [
-        "@semantic-release/npm",
-        {
-          "npmPublish": false
-        }
-      ],
-      [
-        "@semantic-release/wordpress",
-        {
+      [ "@semantic-release/changelog", { "changelogFile": "CHANGELOG.md" } ],
+      [ "@semantic-release/npm", { "npmPublish": false } ],
+      [ "@semantic-release/wordpress", {
           "type": "theme",
           "slug": "wordpress-theme",
           "withVersionFile": true,
@@ -59,22 +42,10 @@
           "releasePath": "dist"
         }
       ],
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "CHANGELOG.md",
-            "package.json",
-            "package-lock.json",
-            "style.css"
-          ]
-        }
-      ]
+      [ "@semantic-release/git", {
+          "assets": [ "CHANGELOG.md", "package.json", "package-lock.json", "style.css" ] } ]
     ]
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "packageManager": "pnpm@9.1.2+sha512.127dc83b9ea10c32be65d22a8efb4a65fb952e8fefbdfded39bdc3c97efc32d31b48b00420df2c1187ace28c921c902f0cb5a134a4d032b8b5295cbfa2c681e2",
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
@@ -83,10 +54,16 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/npm": "^12.0.1",
     "@semantic-release/wordpress": "^1.6.1",
-    "browser-sync": "^3.0.2",
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
     "husky": "^9.0.11",
+    "postcss": "^8.4.38",
+    "postcss-nested": "^6.0.1",
     "semantic-release": "^23.1.1",
-    "tailwindcss": "^3.4.3"
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.12",
+    "vite-plugin-live-reload": "^3.0.3"
   },
   "pnpm": {
     "patchedDependencies": {

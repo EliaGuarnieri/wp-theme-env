@@ -1,5 +1,12 @@
 {
   "themes": [
     "./src"
-  ]
+  ],
+  "env": {
+    "development": {
+      "config": {
+        "IS_VITE_DEVELOPMENT": true
+      }
+    }
+  }
 }
