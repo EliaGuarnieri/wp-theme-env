@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.2.3...v1.2.4) (2024-05-29)
+
+
+### Bug Fixes
+
+* test new release dist ([7ea4ff6](https://github.com/EliaGuarnieri/wordpress-theme/commit/7ea4ff6e65bdfac6d27404ad0a45b022cc8793d4))
+
 ## [1.2.3](https://github.com/EliaGuarnieri/wordpress-theme/compare/v1.2.2...v1.2.3) (2024-05-29)
 
 
