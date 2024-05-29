@@ -11,3 +11,22 @@ index 64dafe8d7740fb6e10046e2ffa86cd9a6c78759e..1f6bb7ed3bb8f8dbef684b3864240277
      if (errors.length) {
          throw new AggregateError(errors);
      }
+diff --git a/dist/publish.js b/dist/publish.js
+index 84a0c18a705cc0563634345179ac8e63c51e2e92..1e3fdbe8cb300f8aec529adbde9ef18c699390d1 100644
+--- a/dist/publish.js
++++ b/dist/publish.js
+@@ -11,12 +11,12 @@ export async function publish(config, context) {
+     const versionFile = path.resolve(releaseDir, 'VERSION');
+     const zipCommand = process.env.ZIP_COMMAND ?? 'zip';
+     try {
+-        const packageResult = await execa(zipCommand, ['-qr', path.join(releaseDir, `package.zip`), config.slug], {
++        const packageResult = await execa(zipCommand, ['-qFSr', path.join(releaseDir, `package.zip`), config.slug], {
+             cwd: config.releasePath,
+             timeout: 30 * 1000,
+         });
+         const zipResult = config.withAssets
+-            ? await execa(zipCommand, ['-qjr', path.join(releaseDir, `assets.zip`), assetDir], {
++            ? await execa(zipCommand, ['-qjFSr', path.join(releaseDir, `assets.zip`), assetDir], {
+                 cwd: assetDir,
+                 timeout: 30 * 1000,
+             })
