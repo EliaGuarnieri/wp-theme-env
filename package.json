@@ -10,6 +10,7 @@
   "scripts": {
     "postinstall": "wp-env run cli --env-cwd=wp-content/themes/src composer install",
     "composer": "wp-env run cli --env-cwd=wp-content/themes/src composer",
+    "prerelease": "vite build --mode production",
     "release": "semantic-release --no-ci",
     "prepare": "husky",
     "dev": "vite build && vite",
