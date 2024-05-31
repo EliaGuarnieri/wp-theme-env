@@ -5,7 +5,7 @@
   "env": {
     "development": {
       "config": {
-        "IS_VITE_DEVELOPMENT": true
+        "WP_ENVIRONMENT_TYPE": "development"
       }
     }
   }

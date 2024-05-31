@@ -1,15 +1,15 @@
 import { defineConfig } from 'vite';
 import liveReload from 'vite-plugin-live-reload';
-import tailwindcss from 'tailwindcss';
 
 export default defineConfig({
   plugins: [
-    liveReload("src/**/*"),
+    liveReload("**/*"),
   ],
-  root: '.',
+
+  root: 'src',
   build: {
     emptyOutDir: false,
-    assetsDir: 'css',
+    outDir: 'assets',
 
     manifest: 'manifest.json',
 
@@ -18,13 +18,18 @@ export default defineConfig({
         main: 'src/assets/js/main.js',
       },
       output: {
-        entryFileNames: 'src/js/[name].min.js',
-        dir: 'assets',
-        assetFileNames: 'src/css/style.min.css',
+        entryFileNames: 'js/[name].min.js',
+        assetFileNames: 'css/style.min.css',
       }
     },
 
     minify: true,
     write: true,
   },
+  server: {
+    strictPort: true,
+    https: false,
+    port: 5173,
+    host: '0.0.0.0',
+  }
 });

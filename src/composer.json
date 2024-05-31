@@ -1,0 +1,10 @@
+{
+    "name": "root/src",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Root\\Classes\\": "classes/"
+        }
+    },
+    "require": { }
+}

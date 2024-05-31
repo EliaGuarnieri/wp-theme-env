@@ -1,6 +1,8 @@
 /**
- * Import global styles for bundling
+ * Import global styles for development
  */
-import "../css/style.min.css"
+import "../css/style.css"
 
-console.log("Hello from main.js")
+/**
+ * Insert below your custom scripts
+ */
