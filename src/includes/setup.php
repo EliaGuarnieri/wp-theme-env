@@ -1,6 +1,6 @@
 <?php
 if (!file_exists($composer = THEME_PATH . '/vendor/autoload.php')) {
-  wp_die(__('Error locating autoloader. Please run <code>composer install</code>.', 'theme'));
+  wp_die(__('Error locating autoloader. Please run <code>\'composer install\'</code>.', 'theme'));
 }
 
 require $composer;
