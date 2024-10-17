@@ -101,3 +101,11 @@ incoming responses other than from the latest request.
 ```
 
 For further details, refer to the [semantic-release documentation](https://github.com/semantic-release/semantic-release) to explore all available options or to integrate version bumping into a continuous integration (CI) workflow.
+
+## Useful links
+
+[Block creation good tutorial](https://fullstackdigital.io/blog/build-a-simple-static-custom-block-in-wordpress-block-creator-01/)
+
+[Available wordpress icons to be used for blocks](https://developer.wordpress.org/resource/dashicons/#portfolio)
+
+[Available wordpress default blocks in Guthemberg](https://wordpress.github.io/gutenberg/?path=/docs/components-introduction--docs)
